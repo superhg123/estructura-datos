@@ -107,10 +107,8 @@ int main() {
 
 	struct Dato2 dato6, *ptrs61, **ptrs62;
 	ptrs61 = &dato6;
+	ptrs62 = &ptrs61;
 
-	for() {
-
-	}
 
 	return 0;
 }
