@@ -38,10 +38,47 @@ int resetearCola(struct Cola *ptrC) {
 	ptrC->ptrM = ptrC->arreglo;
 }
 
+int menu() {
+	int opc;
+
+	printf("1. Para meter a cola\n");
+	printf("2. Para sacar de cola\n");
+	printf("3. Para resetear cola\n");
+	printf("4. Para salir\n");
+
+	scanf("%d", &opc);
+	return opc;
+}
 
 int main() {
 	struct Cola cola, *ptrC;
 	int miDato;
 	ptrC = &cola;
 	resetearCola(ptrC);
+
+	switch(menu()) {
+		case 1:	
+			printf("Ingrese el dato\n");
+			scanf("%d", miDato);
+			meterCola(ptrC, miDato);
+		break;
+
+		case 2:
+			int dato = sacarCola(ptrC);
+			printf("El dato recuperado es %d\n", dato);
+		break;
+
+		case 3:
+			resetearCola(ptrC);
+			printf("Cola reseteada\n");
+		break;
+
+		case 4:
+			exit(0);
+		break;
+
+		default:
+			printf("Ingrese una opcion del 1 al 4\N");
+		break;
+	}
 }
