@@ -8,3 +8,5 @@
   - Archivos utilizados: Cola.c
 * 4/Mar/2026: Uso e implementacion de pila dinamica con Malloc
   - Archivos utilizados: usa_malloc.c
+* 10/Mar/2026: Uso e implementacion de pila dinamica con funciones
+  - Archivos utilizados: pila-dinamica.c
