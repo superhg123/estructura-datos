@@ -1,8 +1,6 @@
 # Lista de tareas
-- Hacer el menu de cola 
-- Hacer el recorrido de pila
-- Hacer la cola circular
-- Hacer eliminacion de pila-ptr-doble.c
+* Comparar 2 cadenas para ordenar una lista
+* Hacer las listas con operaciones de polinomios
 --- 
 # Bitacora de trabajos
 * 27/Feb/2026: Uso e implementacion de cola.
